@@ -48,13 +48,11 @@ The team used the following tools to create Reciflixor:
 * Informal scrum meeting before working sessions
 
 ## Deployed Application
-
-The URL of the deployed application can be found here: 
-https://UNH-Bootcamp-Projects.github.io/project-1-group-a/
-
+[Reciflixor](https://scottgeleas.github.io/Reciflixor/)
 
 ## GitHub Repository
+[Reciflixor Repo](https://github.com/scottgeleas/Reciflixor)
 
-The URL of the GitHub repository that contains the code can be found here:
+The URL of the Original GitHub repository that has the contributors can be found here:
 https://github.com/UNH-Bootcamp-Projects/project-1-group-a
 
