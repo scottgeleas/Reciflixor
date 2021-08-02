@@ -1,0 +1,190 @@
+/* Styling for movie details and poster (two columns) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(58, 4, 4);
+}
+
+.container {
+    background-color: transparent;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* styling for the header section containing heading and subheading */
+.hero {
+    background-image: url('../images/hero-image.png');
+    background-size: cover;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+}
+
+
+/* styling for the page heading (Reciflixor) and subheading statement */
+header h1 {
+    font-family: 'Rammetto One', cursive;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 4rem;
+    color: antiquewhite;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+header p {
+        font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: antiquewhite;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+/*styling for the div that holds the site overview statement AND the movie selection box */
+.intro {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+/*styling for the site overview statement above the movie selection box */
+.overview {
+    color: antiquewhite;
+    font-size: 1.5rem;
+}
+
+/*styling for the movie selection box */
+.box {
+    background-color: antiquewhite;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-radius: 10px;
+}
+
+/*styling for the movie dropdown */
+.dropdown {
+    background-color: antiquewhite;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/* Rounded border - styling for the line beneath the movie details and poster*/
+hr.rounded {
+    border-top: 8px solid antiquewhite;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom:50px
+}
+
+
+/* styling for the overall provider section */
+.providersContainer {
+    color: antiquewhite;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* styling for the inner provider section - icon & links area */
+.providers {
+    background-color: antiquewhite;
+    height: auto;
+    margin-bottom: 2%;
+    color: black;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.providers img {
+    box-shadow: 3px 3px 5px black;
+}
+
+/* styling for the iframes */
+.responsive-embed {
+    margin-bottom: 5%;
+    margin-bottom: 5%;
+}
+
+.row {
+    background-color: rgb(58, 4, 4);
+    color: antiquewhite;
+    border-radius: 10px;
+}
+
+/* Two equal columns for movie details and poster that sits next to each other */
+.column {
+    margin: 2%;
+    padding: 10px;
+    background-color: rgb(58, 4, 4);
+    color: antiquewhite;
+}
+
+/* styling for SEARCH HISTORY section: main container */
+.historyContainer {
+    color: antiquewhite;
+    width: 70%;
+    padding: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    /* border-radius: 10px; */
+    text-align: center;
+}
+
+/* styling for the inner SEARCH HISTORY section - area with list of movie titles */
+.history {
+    background-color: antiquewhite;
+    height: auto;
+    margin-bottom: 2%;
+    color: black;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+}
+
+.history ul {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.history ul li {
+    list-style: none;
+    width: min-content;
+    text-align: center;
+    white-space:nowrap;
+    padding:5px 10px;
+    margin: 5px;
+    font-weight:bold;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.hidden {
+    display: none;
+}
+ 

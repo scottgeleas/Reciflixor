@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciflixor</title>
+    <!--favicon credit: Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/movie.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--google font Rammetto and Roboto-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto&display=swap" rel="stylesheet">
+
+    <!--Foundations CSS Framework-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!--Foundation Compressed CSS (CDN link) from https://get.foundation/sites/docs/installation.html-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+        integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    <!--standard css stylesheet-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!--title and subtitle-->
+    <div class="hero">
+        <header>
+            <h1>Reciflixor</h1>
+            <p>Eat it! Live it!</p>
+        </header>
+    </div>
+
+    <div class="intro">
+        <!--brief overview on how to use the site-->
+        <p class="overview">Select a <u>movie</u> title from the menu to get details about the movie and enjoy a
+            featured <u>meal</u> for a full immersion experience!</p>
+
+        ​<!--movie selection dropbox-->
+        <input type="text" list="movies" class="box" placeholder="Pick a flix!">
+        <datalist id="movies" class="dropdown"></datalist>
+    </div>
+
+   <!-- This container "landingPage" is for the Search History and initial popcorn image-->
+   <div class="landingPage">
+    <!-- NEW DIV FOR PREVIOUS SEARCH HISTORY, Foundation CSS-->
+    <div class="container hidden">
+       
+        <!--API for movie information: Title, Overview, Rating, OtherTBD-->
+        <!-- https://get.foundation/sites/docs/xy-grid.html-->
+        <div class="grid-container row">
+            <div class="grid-x grid-margin-x column">
+                <div class="cell small-6">
+                    <h4 id="movie-title"></h4>
+
+                    <p><u>Overview:</u></p>
+                    <p id="movie-overview"></p>
+
+                    <p><u>Rating:</u></p>
+                    <p id="movie-rating"></p>
+
+                    <p><u>Release Date:</u></p>
+                    <p id="release-date"></p>
+                </div>
+                <div class="cell small-6">
+                    <!--API movie poster-->
+                    <img id="movie-poster" src="assets/images/jaws.jpg" alt="placeholder for movie poster">
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="rounded">
+        <!--YouTube display section which will display the API info; Foundations code copied from https://get.foundation/sites/docs/responsive-embed.html -->
+        <div class="responsive-embed">
+            <iframe id="youTube" width="420" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4"
+                frameborder="2"></iframe>
+
+        </div>
+
+        <!--NEW Providers section using Foundations grid and classes-->
+        <div class="providersContainer">
+            <h4>Watch Providers</h4>
+            <p>Stream from these providers:</p>
+            <div class="providers"></div>
+        </div>
+
+    </div>
+
+        <!-- NEW DIV FOR PREVIOUS SEARCH HISTORY, Foundation CSS-->
+        <div class="historyContainer">
+            <h4>Search History</h4>
+            <p>You previously reviewed these titles:</p>
+            <div class="history">
+                <ul class="small-block-grid-3"></ul>
+            </div>
+        </div>
+    
+        <!--javascript-->
+    <script src="assets/js/main.js"></script>
+
+    <!--Compressed JavaScript CSS (CDN link) from https://get.foundation/sites/docs/installation.html-->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/261abec218.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
